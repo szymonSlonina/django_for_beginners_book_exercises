@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>New post</h1>
+<!-- Add csrf token to protect from cross site request forgery. SHOULD BE USED FOR ALL DJANGO FORMS-->
+<form action="" method="post">{% csrf_token %}
+    <!-- output form data. Renders specified fields within paragraph <p> tags-->
+    {{ form.as_p }}
+    <input type="submit" value="Save">
+</form>
+{% endblock content %}

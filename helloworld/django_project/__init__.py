@@ -1,0 +1,1 @@
+# indicates that files under django_project folder are part of Python package.
